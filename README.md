@@ -1,6 +1,8 @@
 ## Modified version supporting up to 4 finger gestures
 
+
 Credits to RehabMan for the "base" code: https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller
+
 Credits to icedman for the code regarding multi-finger support: https://github.com/icedman/OS-X-Voodoo-PS2-Controller
 
 
