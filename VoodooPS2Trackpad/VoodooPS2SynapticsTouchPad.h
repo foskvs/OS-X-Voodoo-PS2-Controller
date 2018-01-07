@@ -180,6 +180,10 @@ private:
     IOCommandGate*      _cmdGate;
     IOACPIPlatformDevice*_provider;
     
+    int skippyThresh;
+    int lastdx;
+    int lastdy;
+    
 	int z_finger;
 	int divisorx, divisory;
 	int ledge;
@@ -201,6 +205,9 @@ private:
     int draglocktemp;
 	bool hscroll, scroll;
 	bool rtap;
+    
+    bool mtap;
+    
     bool outzone_wt, palm, palm_wt;
     int zlimit;
     int noled;
@@ -236,6 +243,12 @@ private:
     uint8_t inSwipeLeft, inSwipeRight;
     uint8_t inSwipeUp, inSwipeDown;
     int xmoved, ymoved;
+    
+    bool ignore_ew_packets;
+    bool threefingerdrag;
+    int threefingerhorizswipe;
+    int threefingervertswipe;
+    int notificationcenter;
     
     int rczl, rczr, rczb, rczt; // rightclick zone for 1-button ClickPads
     
@@ -308,9 +321,30 @@ private:
     int momentumscrollrest2;
     int momentumscrollsamplesmin;
     
+    SimpleAverage<int, 32> dx_history;
+    SimpleAverage<uint64_t, 32> xtime_history;
+    IOTimerEventSource* xscrollTimer;
+    uint64_t xmomentumscrollinterval;
+    int xmomentumscrollsum;
+    int64_t xmomentumscrollcurrent;
+    int64_t xmomentumscrollrest1;
+    int64_t xmomentumscrollrest2;
+    
+    int primaryx;
+    int primaryy;
+    int secondaryx;
+    int secondaryy;
+    int multitouchcount;
+    uint64_t beginmultitouch_ns;
+    uint64_t lastdispatchkey_ns;
+    int keysToSend;
+    int keysToSendDelay;
+    
     // timer for drag delay
     uint64_t dragexitdelay;
     IOTimerEventSource* dragTimer;
+    
+    bool fourfingersdetected;
    
     SimpleAverage<int, 5> x_avg;
     SimpleAverage<int, 5> y_avg;
@@ -348,6 +382,13 @@ private:
         MODE_WAIT2TAP =     102,    // "no touch"
         MODE_WAIT2RELEASE = 103,    // "touch"
     } touchmode;
+    
+    // delay is in frames
+    void queueKeysToSend(int keys, int delay);
+    void sendQueuedKeys(uint64_t now);
+    void cancelQueuedKeys();
+    
+    const char* modeName(int touchmode);
 
     void setClickButtons(UInt32 clickButtons);
     
@@ -364,7 +405,9 @@ private:
         { return x > rczl && x < rczr && y > rczb && y < rczt; }
     inline bool isInLeftClickZone(int x, int y)
         { return x <= rczl && x <= rczr && y > rczb && y < rczt; }
-        
+    
+    void handleGestures(int px, int py, int sx, int sy, int f, uint64_t t);
+    
     virtual void   dispatchEventsWithPacket(UInt8* packet, UInt32 packetSize);
     virtual void   dispatchEventsWithPacketEW(UInt8* packet, UInt32 packetSize);
     // virtual void   dispatchSwipeEvent ( IOHIDSwipeMask swipeType, AbsoluteTime now);
@@ -389,6 +432,9 @@ private:
     inline bool isFingerTouch(int z) { return z>z_finger && z<zlimit; }
     
     void onScrollTimer(void);
+    
+    void onScrollTimerX(void);
+    
     void queryCapabilities(void);
     
     void onButtonTimer(void);
