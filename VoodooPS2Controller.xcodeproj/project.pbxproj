@@ -42,6 +42,12 @@
 		84EB0AE516F0AD9600016108 /* ApplePS2MouseDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84833FA0161B627D00845294 /* ApplePS2MouseDevice.cpp */; };
 		84F424E3161B59E500777765 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F424C3161B593D00777765 /* Cocoa.framework */; };
 		84F424E4161B59E500777765 /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F424C5161B593D00777765 /* PreferencePanes.framework */; };
+		E0664F612142A38700E39758 /* SSDT-DisableTrackpadProbe.dsl in Resources */ = {isa = PBXBuildFile; fileRef = E0664F602142A38700E39758 /* SSDT-DisableTrackpadProbe.dsl */; };
+		E0664F632142A3A500E39758 /* SSDT-AlternateSwipes.dsl in Resources */ = {isa = PBXBuildFile; fileRef = E0664F622142A3A500E39758 /* SSDT-AlternateSwipes.dsl */; };
+		E0664F652142A43A00E39758 /* SSDT-Swap-LeftControlCapsLock.dsl in Resources */ = {isa = PBXBuildFile; fileRef = E0664F642142A43A00E39758 /* SSDT-Swap-LeftControlCapsLock.dsl */; };
+		E0664F672142A46600E39758 /* SSDT-Swap-LeftControlCommand.dsl in Resources */ = {isa = PBXBuildFile; fileRef = E0664F662142A46600E39758 /* SSDT-Swap-LeftControlCommand.dsl */; };
+		E0664F692142A48A00E39758 /* SSDT-Thinkpad_Clickpad.dsl in Resources */ = {isa = PBXBuildFile; fileRef = E0664F682142A48A00E39758 /* SSDT-Thinkpad_Clickpad.dsl */; };
+		E0664F6B2142A4B000E39758 /* SSDT-Thinkpad_Trackpad.dsl in Resources */ = {isa = PBXBuildFile; fileRef = E0664F6A2142A4B000E39758 /* SSDT-Thinkpad_Trackpad.dsl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,6 +117,12 @@
 		84F424D4161B593D00777765 /* VoodooPS2synapticsPane.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = VoodooPS2synapticsPane.tiff; sourceTree = "<group>"; };
 		84F424E2161B59E500777765 /* VoodooPS2synapticsPane.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoodooPS2synapticsPane.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F424FB161B5A4900777765 /* synapticsconfigload */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = synapticsconfigload; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0664F602142A38700E39758 /* SSDT-DisableTrackpadProbe.dsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "SSDT-DisableTrackpadProbe.dsl"; sourceTree = "<group>"; };
+		E0664F622142A3A500E39758 /* SSDT-AlternateSwipes.dsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "SSDT-AlternateSwipes.dsl"; sourceTree = "<group>"; };
+		E0664F642142A43A00E39758 /* SSDT-Swap-LeftControlCapsLock.dsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "SSDT-Swap-LeftControlCapsLock.dsl"; sourceTree = "<group>"; };
+		E0664F662142A46600E39758 /* SSDT-Swap-LeftControlCommand.dsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "SSDT-Swap-LeftControlCommand.dsl"; sourceTree = "<group>"; };
+		E0664F682142A48A00E39758 /* SSDT-Thinkpad_Clickpad.dsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "SSDT-Thinkpad_Clickpad.dsl"; sourceTree = "<group>"; };
+		E0664F6A2142A4B000E39758 /* SSDT-Thinkpad_Trackpad.dsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "SSDT-Thinkpad_Trackpad.dsl"; sourceTree = "<group>"; };
 		ED1C95C51F9B88EF00CAFCA3 /* SSDT-PrtSc-F13.dsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SSDT-PrtSc-F13.dsl"; sourceTree = "<group>"; };
 		ED5759741D44FBA50069DF9F /* SSDT-KEY-DELL-WN09.dsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SSDT-KEY-DELL-WN09.dsl"; sourceTree = "<group>"; };
 		ED7E45DF1CFB35EE00ED2FB8 /* SSDT-Enable_DynamicEWMode.dsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SSDT-Enable_DynamicEWMode.dsl"; sourceTree = "<group>"; };
@@ -187,6 +199,12 @@
 				ED5759741D44FBA50069DF9F /* SSDT-KEY-DELL-WN09.dsl */,
 				ED1C95C51F9B88EF00CAFCA3 /* SSDT-PrtSc-F13.dsl */,
 				EDD970FD1FD0B826004CCFFD /* SSDT-HP-FixLidSleep.dsl */,
+				E0664F602142A38700E39758 /* SSDT-DisableTrackpadProbe.dsl */,
+				E0664F622142A3A500E39758 /* SSDT-AlternateSwipes.dsl */,
+				E0664F642142A43A00E39758 /* SSDT-Swap-LeftControlCapsLock.dsl */,
+				E0664F662142A46600E39758 /* SSDT-Swap-LeftControlCommand.dsl */,
+				E0664F682142A48A00E39758 /* SSDT-Thinkpad_Clickpad.dsl */,
+				E0664F6A2142A4B000E39758 /* SSDT-Thinkpad_Trackpad.dsl */,
 				84833FC0161B636900845294 /* Common */,
 				84167818161B55B2002C60E6 /* VoodooPS2Controller */,
 				8416782E161B5613002C60E6 /* VoodooPS2Keyboard */,
@@ -568,7 +586,7 @@
 		84167808161B55B2002C60E6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = rehabman;
 			};
 			buildConfigurationList = 8416780B161B55B2002C60E6 /* Build configuration list for PBXProject "VoodooPS2Controller" */;
@@ -600,6 +618,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0664F652142A43A00E39758 /* SSDT-Swap-LeftControlCapsLock.dsl in Resources */,
+				E0664F612142A38700E39758 /* SSDT-DisableTrackpadProbe.dsl in Resources */,
+				E0664F6B2142A4B000E39758 /* SSDT-Thinkpad_Trackpad.dsl in Resources */,
+				E0664F672142A46600E39758 /* SSDT-Swap-LeftControlCommand.dsl in Resources */,
+				E0664F692142A48A00E39758 /* SSDT-Thinkpad_Clickpad.dsl in Resources */,
+				E0664F632142A3A500E39758 /* SSDT-AlternateSwipes.dsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -796,11 +820,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEPLOYMENT_POSTPROCESSING = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"LOGNAME=\\\"${LOGNAME}\\\"",
 					"DEBUG=1",
@@ -811,14 +852,17 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				"LLVM_LTO[arch=x86_64]" = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				MODULE_VERSION = 1.8.29;
+				MODULE_VERSION = 1.8.34;
+				ONLY_ACTIVE_ARCH = YES;
 				"OTHER_LDFLAGS[arch=x86_64]" = "-dead_strip";
 				PRODUCT_NAME = VoodooPS2Controller;
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 				SYMROOT = build/Products;
 			};
 			name = Debug;
@@ -827,23 +871,41 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEPLOYMENT_POSTPROCESSING = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "LOGNAME=\\\"${LOGNAME}\\\"";
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				"LLVM_LTO[arch=x86_64]" = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				MODULE_VERSION = 1.8.29;
+				MODULE_VERSION = 1.8.34;
 				"OTHER_LDFLAGS[arch=x86_64]" = "-dead_strip";
 				PRODUCT_NAME = VoodooPS2Controller;
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 				SYMROOT = build/Products;
 			};
 			name = Release;
@@ -857,6 +919,7 @@
 				INFOPLIST_FILE = "VoodooPS2Controller/VoodooPS2Controller-Info.plist";
 				MODULE_NAME = com.rehabman.driver.VoodooPS2Controller;
 				OTHER_CFLAGS = "-fno-stack-protector";
+				PRODUCT_BUNDLE_IDENTIFIER = org.rehabman.voodoo.driver.PS2Controller;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = YES;
 				STRIP_STYLE = "non-global";
@@ -872,6 +935,7 @@
 				INFOPLIST_FILE = "VoodooPS2Controller/VoodooPS2Controller-Info.plist";
 				MODULE_NAME = com.rehabman.driver.VoodooPS2Controller;
 				OTHER_CFLAGS = "-fno-stack-protector";
+				PRODUCT_BUNDLE_IDENTIFIER = org.rehabman.voodoo.driver.PS2Controller;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = YES;
 				STRIP_STYLE = "non-global";
@@ -888,6 +952,7 @@
 				INFOPLIST_FILE = "VoodooPS2Keyboard/VoodooPS2Keyboard-Info.plist";
 				MODULE_NAME = com.rehabman.driver.VoodooPS2Keyboard;
 				OTHER_CFLAGS = "-fno-stack-protector";
+				PRODUCT_BUNDLE_IDENTIFIER = org.rehabman.voodoo.driver.PS2Keyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = YES;
 				STRIP_STYLE = "non-global";
@@ -904,6 +969,7 @@
 				INFOPLIST_FILE = "VoodooPS2Keyboard/VoodooPS2Keyboard-Info.plist";
 				MODULE_NAME = com.rehabman.driver.VoodooPS2Keyboard;
 				OTHER_CFLAGS = "-fno-stack-protector";
+				PRODUCT_BUNDLE_IDENTIFIER = org.rehabman.voodoo.driver.PS2Keyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = YES;
 				STRIP_STYLE = "non-global";
@@ -920,6 +986,7 @@
 				INFOPLIST_FILE = "VoodooPS2Mouse/VoodooPS2Mouse-Info.plist";
 				MODULE_NAME = com.rehabman.driver.VoodooPS2Mouse;
 				OTHER_CFLAGS = "-fno-stack-protector";
+				PRODUCT_BUNDLE_IDENTIFIER = org.rehabman.voodoo.driver.PS2Mouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = YES;
 				STRIP_STYLE = "non-global";
@@ -936,6 +1003,7 @@
 				INFOPLIST_FILE = "VoodooPS2Mouse/VoodooPS2Mouse-Info.plist";
 				MODULE_NAME = com.rehabman.driver.VoodooPS2Mouse;
 				OTHER_CFLAGS = "-fno-stack-protector";
+				PRODUCT_BUNDLE_IDENTIFIER = org.rehabman.voodoo.driver.PS2Mouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = YES;
 				STRIP_STYLE = "non-global";
@@ -952,6 +1020,7 @@
 				INFOPLIST_FILE = "VoodooPS2Trackpad/VoodooPS2Trackpad-Info.plist";
 				MODULE_NAME = com.rehabman.driver.VoodooPS2Trackpad;
 				OTHER_CFLAGS = "-fno-stack-protector";
+				PRODUCT_BUNDLE_IDENTIFIER = org.rehabman.voodoo.driver.PS2Trackpad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = YES;
 				STRIP_STYLE = "non-global";
@@ -968,6 +1037,7 @@
 				INFOPLIST_FILE = "VoodooPS2Trackpad/VoodooPS2Trackpad-Info.plist";
 				MODULE_NAME = com.rehabman.driver.VoodooPS2Trackpad;
 				OTHER_CFLAGS = "-fno-stack-protector";
+				PRODUCT_BUNDLE_IDENTIFIER = org.rehabman.voodoo.driver.PS2Trackpad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = YES;
 				STRIP_STYLE = "non-global";
@@ -996,6 +1066,7 @@
 				GCC_PREFIX_HEADER = "VoodooPS2synapticsPane/VoodooPS2synapticsPane-Prefix.pch";
 				INFOPLIST_FILE = "VoodooPS2synapticsPane/VoodooPS2synapticsPane-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rehabman.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = prefPane;
 			};
@@ -1009,6 +1080,7 @@
 				GCC_PREFIX_HEADER = "VoodooPS2synapticsPane/VoodooPS2synapticsPane-Prefix.pch";
 				INFOPLIST_FILE = "VoodooPS2synapticsPane/VoodooPS2synapticsPane-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rehabman.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = prefPane;
 			};
