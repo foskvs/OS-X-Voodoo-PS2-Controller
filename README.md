@@ -85,6 +85,35 @@ Note: often times you will see either of the two problems mentioned above right 
 
 ### Change Log:
 
+2018-05-6 v1.8.34
+
+- fix bug with DisableDevice when used with the Synaptics profile
+
+
+2018-05-05 v1.8.33 (redacted)
+
+- change BogusDeleteThreshX and BogusDeltaThreshY for Thinkpad_TrackPad profile (Lenovo T420)
+
+- change default delay for findMouseDevice to 100ms
+
+
+2018-04-24 v1.8.32
+
+- add trackpad prefpane properties for VoodooPS2Mouse when ActLikeTrackpad is set
+
+
+no release v1.8.31
+
+- merge jcsnider's pull request for better Thinkpad trackpoint support
+
+
+2018-04-18 v1.8.30
+
+- Wait (default) 500ms before checking for PS2 mouse in findMouseDevice
+
+- FindMouseDelay can be overriden in VoodooPS2Controller.kext Info.plist or with kernel flag vps2_findmousedelay
+
+
 2017-10-31 v1.8.29
 
 - Fixed lid sleep issue with ProBook series (the fix disables keygen when spurious key make code 'e0 05'/make received)
